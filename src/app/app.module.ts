@@ -10,9 +10,10 @@ import { FormsModule } from '@angular/forms';
 import { PaymentComponent } from './payment/payment.component';
 import { NgxPayPalModule } from 'ngx-paypal';
 import { SuccessComponent } from './success/success.component';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, PaymentComponent, SuccessComponent],
+  declarations: [AppComponent, HomeComponent, PaymentComponent, SuccessComponent, IndexComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

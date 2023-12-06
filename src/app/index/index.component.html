@@ -1,0 +1,385 @@
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>  
+    <link rel="icon" type="image/x-icon" href="../../assets/images/logoBulbicon.png">
+    <title>JAX Lighting Inc.</title>
+
+
+<body>
+    
+    <!-- navbar -->
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <img src = "../../assets/images/logoBulb.jpg" alt = "site icon">
+                <span class = "text-uppercase fw-lighter ms-2">JAX Lighting Inc.</span>
+            </a>
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <!-- Update your navbar links -->
+
+<!-- Add other links and update them similarly -->
+<!-- Update your navbar links -->
+<ul class="navbar-nav mx-auto text-center">
+    <li class="nav-item px-2 py-2">
+      <a class="nav-link text-uppercase text-dark" (click)="scrollTo('header')">Home</a>
+    </li>
+    <li class="nav-item px-2 py-2">
+      <a class="nav-link text-uppercase text-dark" routerLink="/home">Product</a>
+    </li>
+    <li class="nav-item px-2 py-2">
+      <a class="nav-link text-uppercase text-dark" (click)="scrollTo('blogs')">Blogs</a>
+    </li>
+    <li class="nav-item px-2 py-2">
+      <a class="nav-link text-uppercase text-dark" (click)="scrollTo('about')">About Us</a>
+    </li>
+    <li class="nav-item px-2 py-2">
+      <a class="nav-link text-uppercase text-dark" (click)="scrollTo('location')">Location</a>
+    </li>
+  </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- header -->
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top: 104px; background: url('../../assets/images/homepageBackground.jpg') top/cover no-repeat;">
+        <div class = "container h-100 d-flex align-items-center carousel-inner">
+            <div class = "text-center carousel-item active">
+                <h2 class = "text-capitalize text-white">Introducing our latest collection of illuminating wonders</h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white">explore the best of the best!</h1>
+                <a routerLink="/home" class="btn mt-3 text-uppercase">shop now</a>
+
+            </div>
+            <div class = "text-center carousel-item">
+                <h2 class = "text-capitalize text-white">best price & offer</h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white">new season</h1>
+                <a routerLink="/home" class = "btn mt-3 text-uppercase">buy now</a>
+            </div>
+        </div>
+
+        <button class = "carousel-control-prev" type = "button" data-bs-target="#header" data-bs-slide = "prev">
+            <span class = "carousel-control-prev-icon"></span>
+        </button>
+        <button class = "carousel-control-next" type = "button" data-bs-target="#header" data-bs-slide = "next">
+            <span class = "carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <!-- end of header -->
+
+    <!-- special products -->
+    <section id = "special" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">Special Selection</h2>
+            </div>
+            
+
+            
+            <div class = "special-list row g-0">
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "../../assets/images/selection1.png" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">COB DOWNLIGHTS - FIXED</p>
+                        <span class = "fw-bold d-block">₱ 2850.00</span>
+                        <a routerLink="/home" class = "btn btn-primary mt-3">Buy now!</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "../../assets/images/selection2.png" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">COB DOWNLIGHTS - ADJUSTABLE</p>
+                        <span class = "fw-bold d-block">₱ 4700.00</span>
+                        <a routerLink="/home" class = "btn btn-primary mt-3">Buy now!</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "../../assets/images/selection3.png" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">E27 DOWNLIGHTS</p>
+                        <span class = "fw-bold d-block">₱ 2700.00</span>
+                        <a routerLink="/home" class = "btn btn-primary mt-3">Buy now!</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "../../assets/images/selection4.png" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">LED TRACK LGIHTS</p>
+                        <span class = "fw-bold d-block">₱ 2500.00</span>
+                        <a routerLink="/home" class = "btn btn-primary mt-3">Buy now!</a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of special products -->
+
+    <!-- blogs -->
+    <section id="offers" class="py-5" style="background: url('../../assets/images/offer.jpg') center/cover no-repeat;">
+        <div class="container">
+          <div class="row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+            <div class="offers-content">
+              <span class="text-white">Discount Up To 35%</span>
+              <h2 class="mt-2 mb-4 text-white">Grab it now! Limited-time offer.</h2>
+              <a routerLink="/home"d class="btn">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- end of blogs -->
+
+    <!-- blogs -->
+    <section id = "blogs" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">Our Latest Blog</h2>
+            </div>
+
+            <div class = "row g-3">
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "../../assets/images/blog1.png" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">Lighting Tips and Tricks:</h4>
+                        <p class = "card-text mt-3 text-muted">Discover practical advice and creative ideas to enhance the lighting in different areas of your home or office. From choosing the right fixtures to understanding lighting techniques, we'll cover it all.</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                                <span class = "fw-bold">Author: </span>JAX Lighting Industries
+                            </small>
+                        </p>
+                      
+                    </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "../../assets/images/blog2.png" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">Product Spotlights:</h4>
+                        <p class = "card-text mt-3 text-muted">Stay informed about the latest lighting products and innovations available in the market. We'll showcase some of our most popular fixtures, highlighting their unique features and benefits.</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                                <span class = "fw-bold">Author: </span>JAX Lighting Industries
+                            </small>
+                        </p>
+                    
+                    </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "../../assets/images/blog4.png" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">Design Inspiration: </h4>
+                        <p class = "card-text mt-3 text-muted">Explore inspiring lighting designs from around the world. We'll showcase captivating projects and provide insights into how lighting can transform spaces and create ambiance.</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                                <span class = "fw-bold">Author: </span>JAX Lighting Industries
+                            </small>
+                        </p>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of blogs -->
+
+    <!-- about us -->
+    <section id = "about" class = "py-5">
+        <div class = "container">
+            <div class = "row gy-lg-5 align-items-center">
+                <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class = "title pt-3 pb-5">
+                        <h2 class = "position-relative d-inline-block ms-4">About Us</h2>
+                    </div>
+                    <p class = "lead text-muted">JAX Lighting Inc. is a leading provider of high-quality lighting fixtures and solutions.</p>
+                    <p>With a strong commitment to craftsmanship, innovation, and customer satisfaction, we have established ourselves as a trusted name in the industry. Our extensive product range includes a wide variety of residential, commercial, and outdoor lighting options, designed to meet the unique requirements and preferences of our diverse clientele.</p>
+                </div>
+                <div class = "col-lg-6 order-lg-0">
+                    <img src = "../../assets/images/about.png" alt = "" class = "img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about us -->
+    <!-- contact us -->
+    <br>
+    <br>
+    <section id = "contact" class = "py-5">
+        <div class = "contact">
+            <div class = "d-flex flex-column align-items-center justify-content-center">
+                <div class = "title text-center pt-3 pb-5">
+                    <h2 class = "position-relative d-inline-block ms-4">Contacts Us</h2>
+                </div>
+        <p>Feel free to contact us if you have any concerns or questions.</div>
+            <div class="contactbox">
+                <div class="boxleft">
+                    <h3>Contact Form</h3>
+                    <form class="requires-validation" form id="eventForm">
+                        <div class="inputrow">
+                            <div class="inputgroup">
+                                <label>Name</label>
+                                <input class="form-control" type="text" id="name" required="required">
+                                <br><br>
+                            </div>
+                            <div class="inputgroup">
+                                <label>Phone</label>
+                                <input class="form-control" type="tel" id="phone" maxlength=11 required="required">
+                                <br><br>
+                            </div>
+                            <div class="inputgroup">
+                                <label>Email</label>
+                                <input class="form-control" type="email" id="email" required="required">
+                            </div>
+                        </div>
+                        <br><br>
+                        <label>Message</label>
+                        <textarea rows="5" name=txtMessage id="msgContent"></textarea>
+                    
+                        <div class="form-button mt-3">
+                            <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                    
+                        </div>
+                        </div>
+                        </div>
+            </section>
+    <!-- start of google maps -->
+    <section id = "location"  >
+        <div class = "d-flex flex-column align-items-center justify-content-center">
+            <div class = "title text-center pt-3 pb-5">
+                <h2 class = "position-relative d-inline-block ms-4">Location of Official Store</h2>
+            </div>
+        </div>
+        <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.2907496152247!2d121.04325651484002!3d14.582501389813988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8382f5963f3%3A0xad434e82144c4504!2sJax%20Lighting%20Industries%20Inc.!5e0!3m2!1sen!2sph!4v1683116872611!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+    </div>
+    </section>
+    
+    
+
+    <!-- end of google maps -->
+
+    <!-- footer -->
+    <footer class = "bg-dark py-5">
+        <div class = "container">
+            <div class = "row text-white g-4">
+                <div class = "col-md-6 col-lg-3">
+                    <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">JAX Lighting Inc.</a>
+                    <p class = "text-white text-muted mt-3">Whether you're a homeowner, interior designer, or business owner, we're here to provide you with valuable insights, inspiration, and tips to help you create stunningly illuminated spaces. </p>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light">Links</h5>
+                    <ul class = "list-unstyled">
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Special
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Blogs
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Contact Us</h5>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            913 Paete, cor San Jose, Mandaluyong, 1550 Metro Manila
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span class = "fw-light">
+                            jax.lightingINCgmail.com
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            +9786 6776 236
+                        </span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class = "list-unstyled d-flex">
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+

@@ -17,10 +17,15 @@ export class PaymentComponent implements OnInit {
 
   ngOnInit() {
     this.initConfig();
-    this.cartTotal =
-      JSON.parse(localStorage.getItem('cart_total') as any) || [];
+    this.cartTotal = JSON.parse(localStorage.getItem('cart_total') as any) || [];
     console.log(this.cartTotal);
+  
+    // Type assertion for Client_ID
+    const clientId: string = (environment as any).Client_ID;
+    console.log('Client ID:', clientId);
   }
+  
+  
 
   private initConfig(): void {
     this.payPalConfig = {
